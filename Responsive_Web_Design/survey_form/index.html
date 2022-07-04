@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1 id="title">freeCodeCamp Survey Form</h1>
+		<p id="description">Thank you for taking the time to help us improve the platform
+		</p>
+	<form id="survey-form">
+		<div>
+		<label id="name-label">Name</label>
+			<input id="name" type="text" required/>
+		</div>
+		<div>
+		<label id="email-label">Email<input id="email" type="email" required/></label>
+		</div>
+		<div>
+		<label id="number-label">Age<input id="number" type="number" min="13" max="120"required/></label>
+		</div>
+		<label>Which option best describes your current role?
+			<select id="dropdown">
+				 <option value="">select current role</option>
+            	<option value="1">Student</option>
+            	<option value="2">Full Time Job</option>
+			</select>
+		</label>
+		<label>Would you recommend freeCodeCamp to a friend?
+			<label><input type="radio" /> Definitely</label>
+        	<label><input type="radio" /> Maybe</label>	
+        	<label><input type="radio" /> Not sure</label>
+		</label>
+		<label>What would you like to see improved?
+			<label><input type="checkbox"/>Front-end Projects</label>
+			<label><input type="checkbox"/>Back-end Projects</label>
+			<label><input type="checkbox"/>Data Visualization</label>
+		</label>
+		<label>Any comments or suggestions?
+			<textarea name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+		</label>
+		<label>
+		<input type="submit" value="Submit" />
+		<div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+	</form>
+	</body>
+</html>
